@@ -272,16 +272,18 @@ html {
   margin: 0;
   text-align: center;
   font-family: "galaxy", Arial, Helvetica, sans-serif;
+  letter-spacing: 3px;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-  background: linear-gradient(1deg, #190c27, rgb(228, 6, 247), #190c27, rgb(228, 6, 247)) 0% 0%/400% 400%;
-  animation: 120s ease 0s infinite normal none running CustomAnimation;
+  background: linear-gradient(1deg, #190c27, #9406a0, #190c27, #9406a0) 0% 0%/400% 400%;
+  animation: 20s ease-in-out 0s infinite normal none running CustomAnimation;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
 }
 @keyframes CustomAnimation {
   0% {
@@ -307,8 +309,11 @@ html {
 
 .nav-container {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
+  max-width: 1920px;
 }
 
 .meesh-logo {
@@ -323,14 +328,26 @@ html {
 .main-nav {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  height: 80px;
+}
+
+h1 {
+  max-width: 780px;
 }
 
 a {
   color: #eee1f2;
+  text-decoration: none;
 }
 
 a:hover {
   filter: drop-shadow(0 0 2em #eee1f2);
+}
+
+p {
+  letter-spacing: 0;
 }
 
 .vite-logo:hover {
@@ -367,7 +384,7 @@ a:hover {
 }
 
 .purple-keyboard-container {
-  height: 500px;
+  max-height: 500px;
 }
 
 .purple-sky {
@@ -378,5 +395,5 @@ a:hover {
 }
 
 .purple-sky-container {
-  height: 500px;
+  max-height: 500px;
 }/*# sourceMappingURL=style.css.map */

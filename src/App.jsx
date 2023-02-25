@@ -27,11 +27,11 @@ function App() {
 				</div>
 				<div className="card">
 					<h2>Digital Strategy Consultation</h2>
-					<h3>Advice on all the ways that you can grow your audience, harness the value of the customer advocate, and empower your business to achieve a well-known reputation.</h3>
+					<p>Advice on all the ways that you can grow your audience, harness the value of the customer advocate, and empower your business to achieve a well-known reputation.</p>
 					<h2>Web Development</h2>
-					<h3>Everything from the inception of the design, to setting up the online hosting, arranging the domain name, updating the information, and tracking the interactions from visitors. It will all be taken care of, so you can focus on what you do best.</h3>
+					<p>Everything from the inception of the design, to setting up the online hosting, arranging the domain name, updating the information, and tracking the interactions from visitors. It will all be taken care of, so you can focus on what you do best.</p>
 					<h2>Social Media Management</h2>
-					<h3>There's too many social platforms out there. Leave it to an expert to manage it all on your behalf, and ensure your voice is being heard in all the crucial corners of the web.</h3>
+					<p>There's too many social platforms out there. Leave it to an expert to manage it all on your behalf, and ensure your voice is being heard in all the crucial corners of the web.</p>
 					<h2>This is a counter button!</h2>
 					<button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
 				</div>
