@@ -3,6 +3,10 @@ import meeshLogo from "./assets/svg/meesh-media-logo.svg";
 import purpleKeyboard from "./assets/images/purple-keyboard.jpg";
 import purpleSky from "./assets/images/purple-sky.jpg";
 import reactLogo from "./assets/svg/react.svg";
+import twitterLogo from "./assets/svg/twitter.svg";
+import githubLogo from "./assets/svg/github.svg";
+import youtubeLogo from "./assets/svg/youtube.svg";
+import twitchLogo from "./assets/svg/twitch.svg";
 import "./style/style.css";
 
 function App() {
@@ -16,10 +20,40 @@ function App() {
 						<img src={meeshLogo} className="meesh-logo" alt="Meesh Media logo" />
 					</a>
 					<nav className="main-nav">
-						<a href="#">Home</a>
-						<a href="#">About</a>
-						<a href="#">Contact</a>
+						<ul>
+							<li>
+								<a href="#">Home</a>
+							</li>
+							<li>
+								<a href="#">About</a>
+							</li>
+							<li>
+								<a href="#">Contact</a>
+							</li>
+						</ul>
 					</nav>
+					<ul class="socials-container">
+						<a href="https://twitter.com/MeeshMedia" target="_blank">
+							<li class="social-icon">
+								<img class="social-image" src={twitterLogo} alt="the dapper foxtrot twitter" />
+							</li>
+						</a>
+						<a href="https://github.com/theDapperFoxtrot" target="_blank">
+							<li class="social-icon">
+								<img class="social-image" src={githubLogo} alt="the dapper foxtrot git hub" />
+							</li>
+						</a>
+						<a href="https://www.youtube.com/@meeshmedia" target="_blank">
+							<li class="social-icon">
+								<img class="social-image" src={youtubeLogo} alt="the dapper foxtrot on YouTube" />
+							</li>
+						</a>
+						<a href="https://www.twitch.tv/thedapperfoxtrot" target="_blank">
+							<li class="social-icon">
+								<img class="social-image" src={twitchLogo} alt="the dapper foxtrot on Twitch" />
+							</li>
+						</a>
+					</ul>
 				</div>
 				<h1>Find everything you need to make your online presence stand out!</h1>
 				<div className="purple-keyboard-container">
@@ -51,6 +85,7 @@ function App() {
 							<img className="vite-logo" src="./vite.svg" alt="Vite logo" />
 						</a>
 					</p>
+					<p>© Copyright 2023 Meesh Media. All Rights Reserved.</p>
 				</footer>
 			</div>
 		</div>
