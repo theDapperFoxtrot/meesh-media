@@ -12,13 +12,22 @@ import "./style/style.css";
 function App() {
 	const [count, setCount] = useState(0);
 
+	const hamburger = document.querySelector("#hamburger");
+	const menu = document.querySelector("#menu");
+
+	const handleBurger = () => {
+		hamburger.classList.toggle("hamburger-active");
+		hamburger.classList.toggle("hamburger-background");
+		menu.classList.toggle("menu-active");
+	};
+
 	return (
 		<div className="App">
 			<div className="body-container">
-				<div className="nav-container">
-					<a href="https://meeshmedia.com" target="_self">
-						<img src={meeshLogo} className="meesh-logo" alt="Meesh Media logo" />
-					</a>
+				<a href="https://meeshmedia.com" target="_self">
+					<img src={meeshLogo} className="meesh-logo" alt="Meesh Media logo" />
+				</a>
+				<div id="menu" className="nav-container">
 					<nav className="main-nav">
 						<ul>
 							<li>
@@ -55,6 +64,10 @@ function App() {
 						</a>
 					</ul>
 				</div>
+				<div onClick={handleBurger} id="hamburger" class="hamburger-container">
+					<div class="hamburger-menu"></div>
+				</div>
+
 				<h1>Find everything you need to make your online presence stand out!</h1>
 				<div className="purple-keyboard-container">
 					<img className="purple-keyboard" src={purpleKeyboard} alt="purple keyboard" lazy />

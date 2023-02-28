@@ -275,6 +275,7 @@ html {
   align-items: center;
   width: 100%;
   max-width: 1920px;
+  display: none;
 }
 
 .meesh-logo {
@@ -417,4 +418,132 @@ a:hover {
 
 p {
   letter-spacing: 0;
+}
+
+.hamburger-container {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.151);
+  cursor: pointer;
+}
+
+.hamburger-menu {
+  position: absolute;
+  top: 1.9rem;
+  right: 0.5rem;
+  width: 3rem;
+  height: 0.2rem;
+  background-color: white;
+}
+
+.hamburger-menu::after {
+  position: absolute;
+  content: "";
+  width: 3rem;
+  height: 0.2rem;
+  background-color: white;
+  cursor: pointer;
+  top: 1rem;
+  right: 0;
+  transition: 0.5s;
+}
+
+.hamburger-menu::before {
+  position: absolute;
+  content: "";
+  width: 3rem;
+  height: 0.2rem;
+  background-color: white;
+  cursor: pointer;
+  top: -1rem;
+  right: 0;
+  transition: 0.5s;
+}
+
+.hamburger-container {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.1529411765);
+  cursor: pointer;
+}
+
+.hamburger-background {
+  background-color: rgba(255, 255, 255, 0.431372549);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.hamburger-active .hamburger-menu::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.hamburger-active .hamburger-menu::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.hamburger-active .hamburger-menu {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  left: 9999rem;
+}
+
+.menu-active {
+  top: calc(50vh - 12.5rem);
+  left: calc(50vw - 12.5rem);
+}
+
+.menu ul {
+  list-style: none;
+  padding: 5rem;
+  background-color: #000;
+  border-radius: 10%;
+}
+
+.menu li {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.menu a {
+  font-size: 3rem;
+  -webkit-text-decoration: underline rgba(241, 241, 241, 0);
+  text-decoration: underline rgba(241, 241, 241, 0);
+  color: #f1f1f1;
+  transition: -webkit-text-decoration 0.3s ease-in;
+  transition: text-decoration 0.3s ease-in;
+  transition: text-decoration 0.3s ease-in, -webkit-text-decoration 0.3s ease-in;
+  white-space: nowrap;
+}
+
+.menu a:hover,
+.menu a:focus {
+  -webkit-text-decoration: underline #f1f1f1;
+  text-decoration: underline #f1f1f1;
+  color: #f1f1f1;
+}
+
+.menu a:active {
+  -webkit-text-decoration: underline #f1f1f1;
+  text-decoration: underline #f1f1f1;
+  color: #ab1b1b;
 }/*# sourceMappingURL=style.css.map */
