@@ -268,45 +268,6 @@ html {
   overflow: hidden;
 }
 
-:root {
-  margin: 0;
-  text-align: center;
-  font-family: "galaxy", Arial, Helvetica, sans-serif;
-  letter-spacing: 3px;
-  color-scheme: light dark;
-  color: #ffffff;
-  background-color: #242424;
-  background: linear-gradient(1deg, #190c27, #9406a0, #190c27, #9406a0) 0% 0%/400% 400%;
-  animation: 20s ease-in-out 0s infinite normal none running CustomAnimation;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-  overflow-x: hidden;
-}
-@keyframes CustomAnimation {
-  0% {
-    background-position: 0% 0%;
-  }
-  50% {
-    background-position: 51% 100%;
-  }
-  100% {
-    background-position: 0% 0%;
-  }
-}
-
-.app {
-  position: absolute;
-}
-
-.body-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .nav-container {
   display: flex;
   flex-direction: column;
@@ -357,21 +318,44 @@ html {
   height: 50%;
 }
 
-h1 {
+:root {
+  margin: 0;
+  text-align: center;
+  font-family: "galaxy", Arial, Helvetica, sans-serif;
+  letter-spacing: 3px;
+  color-scheme: light dark;
+  color: #ffffff;
+  background-color: #242424;
+  background: linear-gradient(1deg, #190c27, #9406a0, #190c27, #9406a0) 0% 0%/400% 400%;
+  animation: 20s ease-in-out 0s infinite normal none running CustomAnimation;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+}
+@keyframes CustomAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 51% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.body-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  padding: 2em;
   max-width: 780px;
-}
-
-a {
-  color: #eee1f2;
-  text-decoration: none;
-}
-
-a:hover {
-  filter: drop-shadow(0 0 2em #eee1f2);
-}
-
-p {
-  letter-spacing: 0;
 }
 
 .vite-logo:hover {
@@ -395,11 +379,6 @@ p {
     animation: logo-spin infinite 20s linear;
   }
 }
-.card {
-  padding: 2em;
-  max-width: 780px;
-}
-
 .purple-keyboard {
   -o-object-fit: contain;
      object-fit: contain;
@@ -420,4 +399,22 @@ p {
 
 .purple-sky-container {
   max-height: 500px;
+}
+
+h1 {
+  max-width: 780px;
+}
+
+a {
+  color: #eee1f2;
+  text-decoration: none;
+}
+
+a:hover {
+  filter: drop-shadow(0 0 2em #eee1f2);
+  color: #e80be8;
+}
+
+p {
+  letter-spacing: 0;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,42 @@
+.nav-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	max-width: 1920px;
+}
+.meesh-logo {
+	will-change: filter;
+	transition: filter 300ms;
+}
+.meesh-logo:hover {
+	filter: drop-shadow(0 0 2em #eee1f2);
+}
+.main-nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	margin-top: 10px;
+	height: 80px;
+}
+.socials-container,
+.main-nav ul {
+	list-style: none;
+	padding: 0;
+}
+.social-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+}
+.social-icon:hover {
+	background-color: #eee1f2;
+}
+.social-image {
+	width: 50%;
+	height: 50%;
+}

@@ -1,84 +1,10 @@
 @use "partials/font";
 @use "partials/setup";
+@use "partials/nav";
+@use "partials/main";
+@use "partials/footer";
+@use "partials/images";
 
-:root {
-	margin: 0;
-	text-align: center;
-	font-family: "galaxy", Arial, Helvetica, sans-serif;
-	letter-spacing: 3px;
-	color-scheme: light dark;
-	color: #ffffff;
-	background-color: #242424;
-	background: linear-gradient(1deg, #190c27, #9406a0, #190c27, #9406a0) 0% 0% / 400% 400%;
-	animation: 20s ease-in-out 0s infinite normal none running CustomAnimation;
-	font-synthesis: none;
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-text-size-adjust: 100%;
-	@keyframes CustomAnimation {
-		0% {
-			background-position: 0% 0%;
-		}
-		50% {
-			background-position: 51% 100%;
-		}
-		100% {
-			background-position: 0% 0%;
-		}
-	}
-	overflow-x: hidden;
-}
-.app {
-	position: absolute;
-}
-.body-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-.nav-container {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	width: 100%;
-	max-width: 1920px;
-}
-.meesh-logo {
-	will-change: filter;
-	transition: filter 300ms;
-}
-.meesh-logo:hover {
-	filter: drop-shadow(0 0 2em #eee1f2);
-}
-.main-nav {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	margin-top: 10px;
-	height: 80px;
-}
-.socials-container,
-.main-nav ul {
-	list-style: none;
-	padding: 0;
-}
-.social-icon {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 60px;
-	height: 60px;
-	border-radius: 50%;
-}
-.social-icon:hover {
-	background-color: #eee1f2;
-}
-.social-image {
-	width: 50%;
-	height: 50%;
-}
 h1 {
 	max-width: 780px;
 }
@@ -88,46 +14,8 @@ a {
 }
 a:hover {
 	filter: drop-shadow(0 0 2em #eee1f2);
+	color: #e80be8;
 }
 p {
 	letter-spacing: 0;
-}
-.vite-logo:hover {
-	filter: drop-shadow(0 0 2em #bd34feaa);
-}
-.logo:hover {
-	filter: drop-shadow(0 0 2em #61dafbaa);
-}
-@keyframes logo-spin {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
-}
-@media (prefers-reduced-motion: no-preference) {
-	a .logo {
-		animation: logo-spin infinite 20s linear;
-	}
-}
-.card {
-	padding: 2em;
-	max-width: 780px;
-}
-.purple-keyboard {
-	object-fit: contain;
-	width: 100%;
-	height: 100%;
-}
-.purple-keyboard-container {
-	max-height: 500px;
-}
-.purple-sky {
-	object-fit: contain;
-	width: 100%;
-	height: 100%;
-}
-.purple-sky-container {
-	max-height: 500px;
 }
