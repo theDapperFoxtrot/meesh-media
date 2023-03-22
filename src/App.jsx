@@ -21,6 +21,33 @@ function App() {
 		menu.classList.toggle("menu-active");
 	};
 
+	const leadsApp = () => {
+		const inputEl = document.getElementById("input-el");
+		const inputBtn = document.getElementById("input-btn");
+		const ulEl = document.getElementById("ul-el");
+
+		let myLeads = [];
+
+		inputBtn.addEventListener("click", () => {
+			myLeads.push(inputEl.value);
+			inputEl.value = "";
+			renderLeads();
+		});
+
+		const renderLeads = () => {
+			let listItems = "";
+			for (let i = 0; i < myLeads.length; i++) {
+				listItems += '<li><a target="_blank" href="' + myLeads[i] + '"> ' + myLeads[i] + "</a></li>";
+				const li = document.createElement("li");
+				li.textContent = myLeads[i];
+				ulEl.append(li);
+			}
+			ulEl.innerHTML = listItems;
+		};
+	};
+
+	leadsApp();
+
 	return (
 		<div className="App">
 			<div className="body-container">
@@ -72,6 +99,10 @@ function App() {
 				<div className="purple-keyboard-container">
 					<img className="purple-keyboard" src={purpleKeyboard} alt="purple keyboard" lazy />
 				</div>
+				<input type="text" id="input-el" />
+				<button id="input-btn">Save</button>
+				<ul id="ul-el"></ul>
+
 				<div className="card">
 					<h2>Digital Strategy Consultation</h2>
 					<p>Advice on all the ways that you can grow your audience, harness the value of the customer advocate, and empower your business to achieve a well-known reputation.</p>
