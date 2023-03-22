@@ -21,7 +21,7 @@ function App() {
 		menu.classList.toggle("menu-active");
 	};
 
-	const leadsApp = () => {
+	const handleClick = () => {
 		const inputEl = document.getElementById("input-el");
 		const inputBtn = document.getElementById("input-btn");
 		const ulEl = document.getElementById("ul-el");
@@ -45,8 +45,6 @@ function App() {
 			ulEl.innerHTML = listItems;
 		};
 	};
-
-	leadsApp();
 
 	return (
 		<div className="App">
@@ -102,7 +100,9 @@ function App() {
 
 				<div className="card">
 					<input type="text" id="input-el" />
-					<button id="input-btn">Save</button>
+					<button id="input-btn" onClick={handleClick}>
+						Save
+					</button>
 					<ul id="ul-el"></ul>
 					<h2>Digital Strategy Consultation</h2>
 					<p>Advice on all the ways that you can grow your audience, harness the value of the customer advocate, and empower your business to achieve a well-known reputation.</p>
