@@ -99,11 +99,11 @@ function App() {
 				<div className="purple-keyboard-container">
 					<img className="purple-keyboard" src={purpleKeyboard} alt="purple keyboard" lazy />
 				</div>
-				<input type="text" id="input-el" />
-				<button id="input-btn">Save</button>
-				<ul id="ul-el"></ul>
 
 				<div className="card">
+					<input type="text" id="input-el" />
+					<button id="input-btn">Save</button>
+					<ul id="ul-el"></ul>
 					<h2>Digital Strategy Consultation</h2>
 					<p>Advice on all the ways that you can grow your audience, harness the value of the customer advocate, and empower your business to achieve a well-known reputation.</p>
 					<h2>Web Development</h2>
